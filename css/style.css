@@ -8,6 +8,7 @@
     width: 100%;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -19,11 +20,13 @@
     border: 1px solid #ccc;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .square-area {
     width: calc((400px - 2px) / 4);
     height: calc((400px - 2px) / 4);
+    border: 1px solid #ccc;
     transition: .3s;
 }
 
@@ -33,7 +36,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #ccc;
     font-size: 28px;
     cursor: pointer;
 }
@@ -42,6 +44,11 @@
     background-color: #e2e2e2;
 }
 
-/*.hide {
-    display: none;
-}*/
+.hide {
+    display: none !important;
+}
+
+.start-btn {
+    cursor: pointer;
+    padding: 5px;
+}
