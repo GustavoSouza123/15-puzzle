@@ -21,17 +21,27 @@
     flex-wrap: wrap;
 }
 
-.board .square {
+.square-area {
     width: calc((400px - 2px) / 4);
     height: calc((400px - 2px) / 4);
+    transition: .3s;
+}
+
+.square-area .square {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #ccc;
     font-size: 28px;
-    transition: .2s;
     cursor: pointer;
 }
 
-.board .square:hover {
-    background-color: rgba(0,0,0,.1);
+.drag-over {
+    background-color: #e2e2e2;
 }
+
+/*.hide {
+    display: none;
+}*/
