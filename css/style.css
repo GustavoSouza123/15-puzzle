@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.board {
+    width: 400px;
+    height: 400px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.board .square {
+    width: calc((400px - 2px) / 4);
+    height: calc((400px - 2px) / 4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.board .square:hover {
+    background-color: rgba(0,0,0,.1);
+}
